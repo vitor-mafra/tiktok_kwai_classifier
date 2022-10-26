@@ -98,12 +98,12 @@ def is_helo(last_frame, HELO_LAST_FRAME_P_HASH):
 
 
 # TIKTOK
-tiktok_last_frame = get_last_vertical_frame(video_filename=f"./sample_videos/tiktok_example_2.mp4")
+tiktok_last_frame = get_last_vertical_frame(video_filename=f"./classified_videos/tiktok_example_2.mp4")
 TIKTOK_LAST_FRAME_P_HASH = get_p_hash(tiktok_last_frame)
 
 # KWAI
-older_kwai = get_last_vertical_frame(video_filename=f"./sample_videos/kwai_example_4.mp4")
-newer_kwai = get_last_vertical_frame(video_filename=f"./sample_videos/kwai_example_1.mp4")
+older_kwai = get_last_vertical_frame(video_filename=f"./classified_videos/kwai_example_4.mp4")
+newer_kwai = get_last_vertical_frame(video_filename=f"./classified_videos/kwai_example_1.mp4")
 treated_newer_kwai = change_nonwhite_pixels_to_black(newer_kwai)
 
 OLDER_KWAI_LAST_FRAME_P_HASH = get_p_hash(older_kwai)
